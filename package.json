@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "first.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romannjoroge/NodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romannjoroge/NodeJS/issues"
+  },
+  "homepage": "https://github.com/romannjoroge/NodeJS#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
