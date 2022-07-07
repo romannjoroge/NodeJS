@@ -18,3 +18,11 @@ EVENT LOOP
   the code above it is completely executed. This can cause issues when the code above takes a long time to run
 - The issue above can be solved by offloading code execution to the system as Javascript runs the rest of 
   the code
+
+EVENTS
+- Actions in NodeJS are driven by EVENTS
+- Use the events module require('events')
+- on - listen for an event
+  emit - emit an event
+- one event can have many listeners that have different callback functions
+- You first listen for an event before emitting it
