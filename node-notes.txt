@@ -1,0 +1,12 @@
+NPM
+- NPM is the package manager used in node
+- You install packages locally using npm install<package-name>
+- To install pacakges globally you run npm install -g <package-name>
+
+- To create a package.json file you run the comman npm init -y
+- To create a npm script you change scripts section of package.json
+- You run scripts by running npm <script-name> or npm run <script-name>
+
+- To uninstall a npm package you run npm uninstall <package-name>
+
+- npx allows you to run packages as if they were installed globally in your machine
