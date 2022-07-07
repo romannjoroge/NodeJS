@@ -1,25 +1,22 @@
 {
-  "name": "y",
+  "name": "2-express-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "first.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/romannjoroge/NodeJS.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/romannjoroge/NodeJS/issues"
-  },
-  "homepage": "https://github.com/romannjoroge/NodeJS#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.19"
   }
 }
