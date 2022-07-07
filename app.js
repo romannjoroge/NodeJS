@@ -1,6 +1,12 @@
-const items = [1, 2, 3, 4, 5]
-
-for (item in items){
-    console.log(item)   
+console.log('first')
+setTimeout(()=>{
+    console.log('second')
+}, 0)
+console.log('third')
+setTimeout(()=>{
+    console.log('fourth')
+}, 0)
+console.log('fifth')
+for (var i = 0; i < 10; i++){
+    console.log(i)
 }
-console.log('Hello people')

@@ -1,0 +1,7 @@
+The util module is awesome cause it let me combine first.txt and second.txt without going through callback hell!!
+        This is the result:
+        Hello this is a first text file. : Hello this is the second text file.
+THIS IS THE ULTIMATE FORM OF THE START FUNCTION SPEAKING
+            YOU NO LONGER NEED TO EVEN PROMISIFY FUNCTIONS WITH THE UTILS MODULE THANKS TO IMPORTING WITH PROMISES MODULE
+            BASK IN MY GLORY!!!!!!!!
+            Hello this is a first text file. : Hello this is the second text file.

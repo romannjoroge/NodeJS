@@ -10,3 +10,11 @@ NPM
 - To uninstall a npm package you run npm uninstall <package-name>
 
 - npx allows you to run packages as if they were installed globally in your machine
+
+EVENT LOOP
+- It allows Node.js to perform non-blocking I/O operations -despite the fact that Javascript is single 
+  threaded - by offloading operations to the system kernel
+- Javascript being single-threaded means that it reads the code line by line. So code is executed only when
+  the code above it is completely executed. This can cause issues when the code above takes a long time to run
+- The issue above can be solved by offloading code execution to the system as Javascript runs the rest of 
+  the code
