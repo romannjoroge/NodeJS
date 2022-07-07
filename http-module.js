@@ -13,9 +13,9 @@ const testHtmlCode = fs.readFileSync(
 const server = http.createServer((req, res)=>{
     if (req.url === '/'){
         res.end(`<h1>Welcome to our home page<h1>
-        <p>
-        <a href='/test'>Go to test page</a>
-        </p>
+                 <p>
+                    <a href='/test'>Go to test page</a>
+                 </p>
         `)
     }
     else if (req.url === '/test'){
