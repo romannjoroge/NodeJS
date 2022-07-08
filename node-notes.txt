@@ -26,3 +26,9 @@ EVENTS
   emit - emit an event
 - one event can have many listeners that have different callback functions
 - You first listen for an event before emitting it
+
+STREAMS
+- Are used to read and write sequentially, when we need to deal with continuos data or large data
+
+HTTP
+- request has the following data members: method, url
