@@ -1,0 +1,14 @@
+body{
+    background: whitesmoke;
+}
+h1{
+    font-size: 50;
+}
+p{
+    font-style: italic;
+    font-family: 'Times New Roman';
+}
+.new-text{
+    font-family: Arial;
+    font-style: oblique;
+}
