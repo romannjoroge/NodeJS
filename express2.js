@@ -22,6 +22,11 @@ app.get('/about', (req, res)=>{
     res.sendFile(path.resolve(__dirname,'./test-website/about.html'))
 })
 
+app.get('/api/v1/query', (req, res)=>{
+    console.log(req.query)
+    res.send('Hello World!')
+})
+
 app.all('*', (req, res)=>{
     res.status(404)
     res.send("<h1>Couldn't find resource</h1>")

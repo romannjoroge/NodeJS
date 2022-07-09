@@ -58,4 +58,10 @@ EXPRESS API
 - Content type is content/json
 - On the server you create the data, create the API and HTTP interface and the frontend graps the data
 
+URL PARAMETER
+- Allows you to send information to the server e.g
+  https://google.com/search?q=food&tag=important
+The info sent to the server is the q key with food value and the tag key with important value
 
+MIDDLEWARE 
+- Functions that execute during the request to the server

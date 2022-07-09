@@ -46,6 +46,32 @@ app.get('/api/products/:productID', (req, res)=>{
     }
 })
 
+app.get('/api/v1/query', (req, res)=>{
+    // console.log(req.query)  Gives you the query string parameters
+    const {search, limit, id} = req.query
+    let sortedProducts = [...products] // Gives new instance of products
+    if (search){
+        sortedProducts = sortedProducts.filter((product)=>{
+            return product.name.startsWith(search)  // Returns all products that start with the search term
+        })
+    }
+    if (limit){
+        sortedProducts = sortedProducts.slice(0, Number(limit))
+    }
+    
+    if (id){
+        sortedProducts = sortedProducts.filter((product)=>{
+            return product.id === Number(id)
+        })
+    }
+    // Incase the search results to no products being found
+    if (sortedProducts.length < 1){
+        return res.status(200).json({success: true, data: []})
+    }
+    res.status(200)
+    res.json(sortedProducts)
+})
+
 app.get('*', (req, res)=>{
     res.status(404).send("Couldn't find resource")
 })
