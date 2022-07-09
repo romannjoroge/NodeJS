@@ -32,3 +32,30 @@ STREAMS
 
 HTTP
 - request has the following data members: method, url
+
+EXPRESS
+- import it with the command require('express')
+- Create an express app which is similar to creating a http server
+    const app = express()
+- app has some commonly used methods: get, put, push, delete, all, use and listen
+  - app.listen - tells the server what port to listen on
+  - app.get - a user accessing route with get method
+  - app.use - a user accessing route with used for middleware
+  - app. put - a user accessing route with put method
+  - app.push - a user accessing route with push method
+  - app.all - a user accessing a route with any method
+  - app.use(express.static('<directory>')) - tells express where to find the static elements 
+                                             of your site e.g css, Javascript code and images
+
+API VS SSR 
+- API - setting up a HTTP interface for interacting with data represented with json
+      res.json - set up content types and stringing content data
+- SSR - create a template that will send back entire HTML and Javascript files
+      res.render
+
+EXPRESS API
+- The server provides data, this allows any frontend to send a HTTP request to our server and access the data
+- Content type is content/json
+- On the server you create the data, create the API and HTTP interface and the frontend graps the data
+
+
