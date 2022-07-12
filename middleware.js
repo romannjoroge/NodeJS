@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+const authorize = require('./authorize')
+
 // IT IS BEST TO INCLUDE THE IMPLEMENTATION IN A DIFFERENT FILE AND IMPORT THE FUNCTION TO APP.JS
 // Middleware function that will be executed when a request is received
 const logger = (req, res, next) => {
@@ -16,7 +18,8 @@ const logger = (req, res, next) => {
 //      app.get('/example-route', <middle-ware-name>, (callback function))
 // To apply a middleware to all routes underneath a parent route e.g to /app/home and /app/about you can use
 //      app.use('/parent-route', <middle-ware-name>)
-app.use(logger)
+// To execute multiple middlewares you put them in a list
+app.use([authorize, logger])
 
 app.get('/', (req, res)=>{
     res.send('Home')

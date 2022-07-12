@@ -65,3 +65,8 @@ The info sent to the server is the q key with food value and the tag key with im
 
 MIDDLEWARE 
 - Functions that execute during the request to the server
+- Comes in between the request and the response
+
+
+HTTP METHODS 
+- 
