@@ -67,6 +67,9 @@ MIDDLEWARE
 - Functions that execute during the request to the server
 - Comes in between the request and the response
 
+POSTMAN
+- Allows you to test POST, GET, PUT method etc without creating a frontend
+- 
 
 HTTP METHODS 
 - 
