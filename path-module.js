@@ -20,3 +20,6 @@ console.log(base)
 // Getting absolute path
 const absolute = path.resolve(__dirname, 'test', 'test-sub', 'test.txt')
 console.log(absolute)
+
+const people_route = path.resolve(__dirname, './router', 'people.js')
+console.log(people_route)
